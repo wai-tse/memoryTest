@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "chai": "^4.1.2",
     "compression": "^1.7.2",
     "express": "^4.16.3",
+    "mocha": "^5.1.1",
     "morgan": "^1.9.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -15,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "./node_modules/.bin/mocha --reporter spec",
     "eject": "react-scripts eject"
   }
 }

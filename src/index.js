@@ -4,10 +4,11 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import { pick } from "./js/pick";
 import { logicA } from "./js/logicA";
-import { logicB } from "./js/logicB";
+// import { logicB } from "./js/logicB";
 import "./index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
+var logicB = require("./js/logicB");
 
 Array.prototype.pick = pick;
 
@@ -15,8 +16,10 @@ const msg =
   "Pay attention to the numbers you see on the screen. Then click the numbers in the right order. Click here to continue";
 
 const initialState = {
-  lst: ["", "123", "", 3, logicA(), "keypadOff", "msgboxOn", msg]
+  lst: ["", "123", "", 3, logicA(), "keypadOff", "msgboxOn", msg, logicB()]
 };
+
+console.log("LogicB " + initialState.lst[8](false));
 
 function reducer(state = initialState, action) {
   switch (action.type) {

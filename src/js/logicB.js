@@ -1,4 +1,4 @@
-export function logicB() {
+module.exports = function logicB() {
   var pattern = [false, false, true, false, false];
   var counter = 0;
   var state = false;
@@ -10,4 +10,4 @@ export function logicB() {
     }
     return counter;
   };
-}
+};
