@@ -23,6 +23,108 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.lightOff {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  line-height: 34px;
+  height: 71px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 71px;
+  color: black;
+  cursor: default;
+}
+
+.lightOn {
+  background: black;
+  border: 1px solid #999;
+  float: left;
+  line-height: 34px;
+  height: 71px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 71px;
+  color: black;
+  cursor: default;
+}
+
+.Led {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  line-height: 34px;
+  height: 71px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 211px;
+  color: black;
+  cursor: default;
+}
+
+.Msgbox {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  line-height: 34px;
+  height: 281px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 211px;
+  color: black;
+  cursor: default;
+}
+
+.Level {
+  background: #fff;
+  border: none;
+  float: left;
+  line-height: 34px;
+  height: 31px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 151px;
+  color: black;
+  cursor: default;
+  font-size: 12px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keypadOn {
+  display: block;
+}
+
+.keypadOff {
+  display: none;
+}
+
+.msgboxOn {
+  display: block;
+}
+
+.msgboxOff {
+  display: none;
 }
