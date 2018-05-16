@@ -45,7 +45,13 @@ export class Enter extends React.Component {
     console.log("Match Length");
     var check = this.props.lst[4](this.props.lst[0] === this.props.lst[1]);
     var checkB = this.props.lst[8](this.props.lst[0] === this.props.lst[1]);
-    if (check === 0) {
+    console.log("checkB " + checkB);
+    if (check === 3 || checkB === 5) {
+      this.props.dispatch({ type: "KEYPAD_OFF" });
+      this.props.dispatch({ type: "MSGBOX_ON" });
+      this.props.dispatch({ type: "CHANGE_MSG" });
+      this.props.dispatch({ type: "RESET_LOGICA" });
+    } else if (check === 0) {
       this.props.dispatch({ type: "LEVEL_UP" });
       displayNewLst();
     } else if (check === 1) {
@@ -53,11 +59,6 @@ export class Enter extends React.Component {
     } else if (check === 2) {
       this.props.dispatch({ type: "LEVEL_DOWN" });
       displayNewLst();
-    } else if (check === 3 || checkB === 5) {
-      this.props.dispatch({ type: "KEYPAD_OFF" });
-      this.props.dispatch({ type: "MSGBOX_ON" });
-      this.props.dispatch({ type: "CHANGE_MSG" });
-      this.props.dispatch({ type: "RESET_LOGICA" });
     }
   };
   mouseOver = () => {};

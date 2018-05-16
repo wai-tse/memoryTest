@@ -19,8 +19,6 @@ const initialState = {
   lst: ["", "123", "", 3, logicA(), "keypadOff", "msgboxOn", msg, logicB()]
 };
 
-console.log("LogicB " + initialState.lst[8](false));
-
 function reducer(state = initialState, action) {
   switch (action.type) {
     case "INCREMENT":
